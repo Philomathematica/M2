@@ -4,11 +4,11 @@ on run argv
 
         tell application "Terminal"
                 activate
-                set cmdToRun to "cd " & quoted form of (folderName as strin
+                set cmdToRun to "cd " & quoted form of (folderName as string)
                 tell application "System Events"
                         keystroke "n" using {command down}
                 end tell
-                do script cmdToRun in first window of application "Terminal
+                do script cmdToRun in first window of application "Terminal"
         end tell
 end run
 
